@@ -1,0 +1,122 @@
+[
+  {
+    "strategy": "dijkstra_info_gain",
+    "coverage_final": 0.9546080368061435,
+    "total_motion_time": 177.20395381791374,
+    "total_steps": 18,
+    "total_distance": 108.58967956254405,
+    "total_cpu_time": 62.38879323005676,
+    "rrt_statistics": {
+      "total_nodes": 0,
+      "total_edges": 0,
+      "total_candidate_frontiers": 0
+    },
+    "coverage_speed": 0.0053870583372369486,
+    "coverage_efficiency": 0.00879096467225802
+  },
+  {
+    "strategy": "dynamic_rrt",
+    "coverage_final": 0.9763034796514363,
+    "total_motion_time": 188.96603442078617,
+    "total_steps": 16,
+    "total_distance": 131.36511637647317,
+    "total_cpu_time": 53.11409282684326,
+    "rrt_statistics": {
+      "total_nodes": 2173,
+      "total_edges": 2178,
+      "total_candidate_frontiers": 1440
+    },
+    "coverage_speed": 0.005166555368767602,
+    "coverage_efficiency": 0.007431984278486029
+  },
+  {
+    "strategy": "extended_rrt",
+    "coverage_final": 0.9554289916792803,
+    "total_motion_time": 243.93777901550135,
+    "total_steps": 20,
+    "total_distance": 154.43649358253606,
+    "total_cpu_time": 58.56145930290222,
+    "rrt_statistics": {
+      "total_nodes": 2751,
+      "total_edges": 2743,
+      "total_candidate_frontiers": 1415
+    },
+    "coverage_speed": 0.003916691360949738,
+    "coverage_efficiency": 0.006186549367417921
+  },
+  {
+    "strategy": "frontier_greedy",
+    "coverage_final": 0.9649469372397103,
+    "total_motion_time": 210.97131197734845,
+    "total_steps": 16,
+    "total_distance": 140.18371998972916,
+    "total_cpu_time": 62.26426839828491,
+    "rrt_statistics": {
+      "total_nodes": 0,
+      "total_edges": 0,
+      "total_candidate_frontiers": 0
+    },
+    "coverage_speed": 0.004573830101332993,
+    "coverage_efficiency": 0.006883445077006153
+  },
+  {
+    "strategy": "informed_rrt_star",
+    "coverage_final": 0.948955420440066,
+    "total_motion_time": 296.14707927552246,
+    "total_steps": 29,
+    "total_distance": 190.78830125597602,
+    "total_cpu_time": 63.08890247344971,
+    "rrt_statistics": {
+      "total_nodes": 4481,
+      "total_edges": 4519,
+      "total_candidate_frontiers": 611
+    },
+    "coverage_speed": 0.0032043382725959585,
+    "coverage_efficiency": 0.004973865872241692
+  },
+  {
+    "strategy": "rrt",
+    "coverage_final": 0.9782190410220888,
+    "total_motion_time": 220.18547414010243,
+    "total_steps": 18,
+    "total_distance": 151.55198650628193,
+    "total_cpu_time": 74.90844130516052,
+    "rrt_statistics": {
+      "total_nodes": 2991,
+      "total_edges": 2929,
+      "total_candidate_frontiers": 1235
+    },
+    "coverage_speed": 0.004442704700854404,
+    "coverage_efficiency": 0.0064546764682727594
+  },
+  {
+    "strategy": "rrt_connect",
+    "coverage_final": 0.9643825307644287,
+    "total_motion_time": 295.592784873226,
+    "total_steps": 22,
+    "total_distance": 194.44313013965072,
+    "total_cpu_time": 60.29157614707947,
+    "rrt_statistics": {
+      "total_nodes": 2811,
+      "total_edges": 2802,
+      "total_candidate_frontiers": 1386
+    },
+    "coverage_speed": 0.0032625374505606884,
+    "coverage_efficiency": 0.004959715110900554
+  },
+  {
+    "strategy": "rrt_star_smart",
+    "coverage_final": 0.9319890197285718,
+    "total_motion_time": 208.65513247402964,
+    "total_steps": 15,
+    "total_distance": 149.88365866002053,
+    "total_cpu_time": 45.39525008201599,
+    "rrt_statistics": {
+      "total_nodes": 2652,
+      "total_edges": 2658,
+      "total_candidate_frontiers": 183
+    },
+    "coverage_speed": 0.004466647950031003,
+    "coverage_efficiency": 0.006218082932193378
+  }
+]

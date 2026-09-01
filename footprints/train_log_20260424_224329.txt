@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/orin-001/sda/agibotnav/footprints/footprints/main.py", line 7, in <module>
+    from .training.train import TrainManager
+  File "/home/orin-001/sda/agibotnav/footprints/footprints/training/train.py", line 19, in <module>
+    from loguru import logger
+ModuleNotFoundError: No module named 'loguru'

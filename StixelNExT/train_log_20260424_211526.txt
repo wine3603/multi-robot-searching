@@ -1,0 +1,371 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 64, 94, 312]           3,136
+       BatchNorm2d-2          [-1, 64, 94, 312]             128
+         GroupNorm-3          [-1, 64, 94, 312]             128
+            Conv2d-4          [-1, 96, 47, 156]          24,672
+            Conv2d-5          [-1, 96, 47, 156]           4,704
+         GroupNorm-6          [-1, 96, 47, 156]             192
+            Conv2d-7         [-1, 384, 47, 156]          37,248
+              GELU-8         [-1, 384, 47, 156]               0
+            Conv2d-9          [-1, 96, 47, 156]          36,960
+      LayerScaler-10          [-1, 96, 47, 156]               0
+  StochasticDepth-11          [-1, 96, 47, 156]               0
+  BottleNeckBlock-12          [-1, 96, 47, 156]               0
+           Conv2d-13          [-1, 96, 47, 156]           4,704
+        GroupNorm-14          [-1, 96, 47, 156]             192
+           Conv2d-15         [-1, 384, 47, 156]          37,248
+             GELU-16         [-1, 384, 47, 156]               0
+           Conv2d-17          [-1, 96, 47, 156]          36,960
+      LayerScaler-18          [-1, 96, 47, 156]               0
+  StochasticDepth-19          [-1, 96, 47, 156]               0
+  BottleNeckBlock-20          [-1, 96, 47, 156]               0
+           Conv2d-21          [-1, 96, 47, 156]           4,704
+        GroupNorm-22          [-1, 96, 47, 156]             192
+           Conv2d-23         [-1, 384, 47, 156]          37,248
+             GELU-24         [-1, 384, 47, 156]               0
+           Conv2d-25          [-1, 96, 47, 156]          36,960
+      LayerScaler-26          [-1, 96, 47, 156]               0
+  StochasticDepth-27          [-1, 96, 47, 156]               0
+  BottleNeckBlock-28          [-1, 96, 47, 156]               0
+           Conv2d-29          [-1, 96, 47, 156]           4,704
+        GroupNorm-30          [-1, 96, 47, 156]             192
+           Conv2d-31         [-1, 384, 47, 156]          37,248
+             GELU-32         [-1, 384, 47, 156]               0
+           Conv2d-33          [-1, 96, 47, 156]          36,960
+      LayerScaler-34          [-1, 96, 47, 156]               0
+  StochasticDepth-35          [-1, 96, 47, 156]               0
+  BottleNeckBlock-36          [-1, 96, 47, 156]               0
+           Conv2d-37          [-1, 96, 47, 156]           4,704
+        GroupNorm-38          [-1, 96, 47, 156]             192
+           Conv2d-39         [-1, 384, 47, 156]          37,248
+             GELU-40         [-1, 384, 47, 156]               0
+           Conv2d-41          [-1, 96, 47, 156]          36,960
+      LayerScaler-42          [-1, 96, 47, 156]               0
+  StochasticDepth-43          [-1, 96, 47, 156]               0
+  BottleNeckBlock-44          [-1, 96, 47, 156]               0
+           Conv2d-45          [-1, 96, 47, 156]           4,704
+        GroupNorm-46          [-1, 96, 47, 156]             192
+           Conv2d-47         [-1, 384, 47, 156]          37,248
+             GELU-48         [-1, 384, 47, 156]               0
+           Conv2d-49          [-1, 96, 47, 156]          36,960
+      LayerScaler-50          [-1, 96, 47, 156]               0
+  StochasticDepth-51          [-1, 96, 47, 156]               0
+  BottleNeckBlock-52          [-1, 96, 47, 156]               0
+        GroupNorm-53          [-1, 96, 47, 156]             192
+           Conv2d-54          [-1, 192, 23, 78]          73,920
+           Conv2d-55          [-1, 192, 23, 78]           9,408
+        GroupNorm-56          [-1, 192, 23, 78]             384
+           Conv2d-57          [-1, 768, 23, 78]         148,224
+             GELU-58          [-1, 768, 23, 78]               0
+           Conv2d-59          [-1, 192, 23, 78]         147,648
+      LayerScaler-60          [-1, 192, 23, 78]               0
+  StochasticDepth-61          [-1, 192, 23, 78]               0
+  BottleNeckBlock-62          [-1, 192, 23, 78]               0
+           Conv2d-63          [-1, 192, 23, 78]           9,408
+        GroupNorm-64          [-1, 192, 23, 78]             384
+           Conv2d-65          [-1, 768, 23, 78]         148,224
+             GELU-66          [-1, 768, 23, 78]               0
+           Conv2d-67          [-1, 192, 23, 78]         147,648
+      LayerScaler-68          [-1, 192, 23, 78]               0
+  StochasticDepth-69          [-1, 192, 23, 78]               0
+  BottleNeckBlock-70          [-1, 192, 23, 78]               0
+           Conv2d-71          [-1, 192, 23, 78]           9,408
+        GroupNorm-72          [-1, 192, 23, 78]             384
+           Conv2d-73          [-1, 768, 23, 78]         148,224
+             GELU-74          [-1, 768, 23, 78]               0
+           Conv2d-75          [-1, 192, 23, 78]         147,648
+      LayerScaler-76          [-1, 192, 23, 78]               0
+  StochasticDepth-77          [-1, 192, 23, 78]               0
+  BottleNeckBlock-78          [-1, 192, 23, 78]               0
+  ConvNextEncoder-79          [-1, 192, 23, 78]               0
+         Upsample-80         [-1, 192, 94, 312]               0
+           Conv2d-81           [-1, 2, 94, 312]             386
+          Sigmoid-82           [-1, 2, 94, 312]               0
+             Head-83           [-1, 2, 94, 312]               0
+================================================================
+Total params: 1,494,178
+Trainable params: 1,494,178
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 5.37
+Forward/backward pass size (MB): 664.72
+Params size (MB): 5.70
+Estimated Total Size (MB): 675.79
+----------------------------------------------------------------
+Running on cuda
+
+   Epoch 1
+----------------------------------------------------------------
+loss: 8.530646  [    0/   16], 	 bce_occupancy: 7.231832, bce_edges: 1.298814,
+Test Error: 
+ Avg loss: 4.700328 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-0_test-error-4.700328350067139.pth
+Time elapsed: 0:00:03.443471
+
+   Epoch 2
+----------------------------------------------------------------
+loss: 7.609709  [    0/   16], 	 bce_occupancy: 6.386523, bce_edges: 1.223186,
+Test Error: 
+ Avg loss: 11.595863 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-1_test-error-11.595863342285156.pth
+Time elapsed: 0:00:05.943500
+
+   Epoch 3
+----------------------------------------------------------------
+loss: 7.047673  [    0/   16], 	 bce_occupancy: 5.965024, bce_edges: 1.082650,
+Test Error: 
+ Avg loss: 4.346196 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-2_test-error-4.346196174621582.pth
+Time elapsed: 0:00:08.590367
+
+   Epoch 4
+----------------------------------------------------------------
+loss: 4.629748  [    0/   16], 	 bce_occupancy: 3.818321, bce_edges: 0.811427,
+Test Error: 
+ Avg loss: 6.011434 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-3_test-error-6.011434078216553.pth
+Time elapsed: 0:00:11.075028
+
+   Epoch 5
+----------------------------------------------------------------
+loss: 3.650639  [    0/   16], 	 bce_occupancy: 3.166695, bce_edges: 0.483944,
+Test Error: 
+ Avg loss: 4.143169 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-4_test-error-4.143169403076172.pth
+Time elapsed: 0:00:13.511472
+
+   Epoch 6
+----------------------------------------------------------------
+loss: 3.593815  [    0/   16], 	 bce_occupancy: 3.110248, bce_edges: 0.483567,
+Test Error: 
+ Avg loss: 6.174335 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-5_test-error-6.174335479736328.pth
+Time elapsed: 0:00:16.079382
+
+   Epoch 7
+----------------------------------------------------------------
+loss: 3.056318  [    0/   16], 	 bce_occupancy: 2.625110, bce_edges: 0.431208,
+Test Error: 
+ Avg loss: 2.908165 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-6_test-error-2.9081647396087646.pth
+Time elapsed: 0:00:18.560870
+
+   Epoch 8
+----------------------------------------------------------------
+loss: 2.496282  [    0/   16], 	 bce_occupancy: 2.120621, bce_edges: 0.375662,
+Test Error: 
+ Avg loss: 2.452802 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-7_test-error-2.4528017044067383.pth
+Time elapsed: 0:00:21.091451
+
+   Epoch 9
+----------------------------------------------------------------
+loss: 2.285075  [    0/   16], 	 bce_occupancy: 1.948763, bce_edges: 0.336311,
+Test Error: 
+ Avg loss: 3.559508 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-8_test-error-3.5595078468322754.pth
+Time elapsed: 0:00:23.645477
+
+   Epoch 10
+----------------------------------------------------------------
+loss: 1.966923  [    0/   16], 	 bce_occupancy: 1.653081, bce_edges: 0.313842,
+Test Error: 
+ Avg loss: 2.465786 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-9_test-error-2.465785503387451.pth
+Time elapsed: 0:00:26.242275
+
+   Epoch 11
+----------------------------------------------------------------
+loss: 1.915390  [    0/   16], 	 bce_occupancy: 1.590639, bce_edges: 0.324751,
+Test Error: 
+ Avg loss: 3.665588 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-10_test-error-3.665587902069092.pth
+Time elapsed: 0:00:29.512215
+
+   Epoch 12
+----------------------------------------------------------------
+loss: 1.645597  [    0/   16], 	 bce_occupancy: 1.304678, bce_edges: 0.340918,
+Test Error: 
+ Avg loss: 6.611096 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-11_test-error-6.611096382141113.pth
+Time elapsed: 0:00:32.825690
+
+   Epoch 13
+----------------------------------------------------------------
+loss: 2.533478  [    0/   16], 	 bce_occupancy: 2.203256, bce_edges: 0.330222,
+Test Error: 
+ Avg loss: 1.957994 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-12_test-error-1.9579938650131226.pth
+Time elapsed: 0:00:36.418888
+
+   Epoch 14
+----------------------------------------------------------------
+loss: 1.665778  [    0/   16], 	 bce_occupancy: 1.320316, bce_edges: 0.345462,
+Test Error: 
+ Avg loss: 1.881186 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-13_test-error-1.8811864852905273.pth
+Time elapsed: 0:00:39.793309
+
+   Epoch 15
+----------------------------------------------------------------
+loss: 1.476506  [    0/   16], 	 bce_occupancy: 1.174028, bce_edges: 0.302479,
+Test Error: 
+ Avg loss: 2.981757 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-14_test-error-2.9817569255828857.pth
+Time elapsed: 0:00:43.734692
+
+   Epoch 16
+----------------------------------------------------------------
+loss: 1.554055  [    0/   16], 	 bce_occupancy: 1.261641, bce_edges: 0.292414,
+Test Error: 
+ Avg loss: 1.739118 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-15_test-error-1.7391176223754883.pth
+Time elapsed: 0:00:47.457694
+
+   Epoch 17
+----------------------------------------------------------------
+loss: 1.412587  [    0/   16], 	 bce_occupancy: 1.120652, bce_edges: 0.291934,
+Test Error: 
+ Avg loss: 1.456553 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-16_test-error-1.4565527439117432.pth
+Time elapsed: 0:00:50.145095
+
+   Epoch 18
+----------------------------------------------------------------
+loss: 1.419106  [    0/   16], 	 bce_occupancy: 1.124324, bce_edges: 0.294782,
+Test Error: 
+ Avg loss: 1.414026 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-17_test-error-1.4140256643295288.pth
+Time elapsed: 0:00:52.758873
+
+   Epoch 19
+----------------------------------------------------------------
+loss: 1.283590  [    0/   16], 	 bce_occupancy: 1.004982, bce_edges: 0.278608,
+Test Error: 
+ Avg loss: 1.717015 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-18_test-error-1.7170146703720093.pth
+Time elapsed: 0:00:55.255435
+
+   Epoch 20
+----------------------------------------------------------------
+loss: 1.215391  [    0/   16], 	 bce_occupancy: 0.941869, bce_edges: 0.273522,
+Test Error: 
+ Avg loss: 1.363634 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-19_test-error-1.363634467124939.pth
+Time elapsed: 0:00:57.814251
+
+   Epoch 21
+----------------------------------------------------------------
+loss: 1.183299  [    0/   16], 	 bce_occupancy: 0.911279, bce_edges: 0.272020,
+Test Error: 
+ Avg loss: 1.190352 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-20_test-error-1.1903516054153442.pth
+Time elapsed: 0:01:00.348591
+
+   Epoch 22
+----------------------------------------------------------------
+loss: 1.139211  [    0/   16], 	 bce_occupancy: 0.869874, bce_edges: 0.269337,
+Test Error: 
+ Avg loss: 1.290472 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-21_test-error-1.2904722690582275.pth
+Time elapsed: 0:01:02.953343
+
+   Epoch 23
+----------------------------------------------------------------
+loss: 1.104296  [    0/   16], 	 bce_occupancy: 0.839285, bce_edges: 0.265011,
+Test Error: 
+ Avg loss: 1.367608 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-22_test-error-1.3676081895828247.pth
+Time elapsed: 0:01:05.466468
+
+   Epoch 24
+----------------------------------------------------------------
+loss: 1.092757  [    0/   16], 	 bce_occupancy: 0.831308, bce_edges: 0.261450,
+Test Error: 
+ Avg loss: 1.214126 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-23_test-error-1.2141255140304565.pth
+Time elapsed: 0:01:08.058483
+
+   Epoch 25
+----------------------------------------------------------------
+loss: 1.060991  [    0/   16], 	 bce_occupancy: 0.801034, bce_edges: 0.259958,
+Test Error: 
+ Avg loss: 1.183504 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-24_test-error-1.18350350856781.pth
+Time elapsed: 0:01:10.679092
+
+   Epoch 26
+----------------------------------------------------------------
+loss: 1.017394  [    0/   16], 	 bce_occupancy: 0.760255, bce_edges: 0.257139,
+Test Error: 
+ Avg loss: 1.224476 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-25_test-error-1.2244759798049927.pth
+Time elapsed: 0:01:13.280637
+
+   Epoch 27
+----------------------------------------------------------------
+loss: 1.000988  [    0/   16], 	 bce_occupancy: 0.748560, bce_edges: 0.252428,
+Test Error: 
+ Avg loss: 1.206026 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-26_test-error-1.2060260772705078.pth
+Time elapsed: 0:01:15.878087
+
+   Epoch 28
+----------------------------------------------------------------
+loss: 0.962225  [    0/   16], 	 bce_occupancy: 0.713586, bce_edges: 0.248640,
+Test Error: 
+ Avg loss: 1.163274 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-27_test-error-1.1632744073867798.pth
+Time elapsed: 0:01:18.333225
+
+   Epoch 29
+----------------------------------------------------------------
+loss: 0.925526  [    0/   16], 	 bce_occupancy: 0.679412, bce_edges: 0.246115,
+Test Error: 
+ Avg loss: 1.207873 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-28_test-error-1.2078734636306763.pth
+Time elapsed: 0:01:20.813513
+
+   Epoch 30
+----------------------------------------------------------------
+loss: 0.898806  [    0/   16], 	 bce_occupancy: 0.658426, bce_edges: 0.240381,
+Test Error: 
+ Avg loss: 1.182256 
+
+Saved PyTorch Model State to saved_models/ground/StixelNExT_ground_epoch-29_test-error-1.1822564601898193.pth
+Time elapsed: 0:01:23.324297
+Finished training in 0:01:23
+
+✅ 最佳模型已复制到对比文件夹: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+   运行 python eval_baseline_vs_ours.py 在 src/FAST_LIO/scripts/ 查看对比结果

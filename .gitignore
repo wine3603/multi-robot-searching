@@ -1,0 +1,120 @@
+# Build files
+build/
+*/build/
+**/build/
+
+# Install files
+install/
+*/install/
+**/install/
+
+# Log files
+log/
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ROS2 specific
+*.pyc
+*.pyo
+*.pyd
+.clang-format
+.*
+!/.gitignore
+!/.github/
+
+# Model weights and checkpoints
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+model_checkpoints/
+saved_models/
+*.weights
+*.h5
+*.pkl
+*.pb
+
+# Media files
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Data files
+*.pcd
+*.ply
+*.las
+*.bag
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Experiment outputs
+experiments/*/outputs/
+experiments/*/results/
+experiments/*/logs/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Colcon
+.colcon_install_layout/
+log/latest_build/
+log/latest_log/
+
+# Compiled Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+*.la
+*.lo
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex

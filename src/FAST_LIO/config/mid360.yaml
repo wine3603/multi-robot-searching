@@ -1,0 +1,54 @@
+/**:
+    ros__parameters:
+        # 原有核心参数（保留）
+        feature_extract_enable: false
+        point_filter_num: 2         # 从 2 → 4，减少点数量，降低CPU计算负担
+        max_iteration: 3               # 从 3 → 4，增加迭代次数，优化更充分
+        filter_size_surf: 1.0       # 从 0.4 → 0.5，更强降采样，去除噪声
+        filter_size_map: 0.5
+        cube_side_length: 200.0       # 从 1000 → 500，限制地图大小，减少内存占用
+        runtime_pos_log_enable: false
+        map_file_path: "./test.pcd"
+
+        
+        common:
+            lid_topic:  "/livox/lidar"
+            imu_topic:  "/livox/imu"
+            time_sync_en: false        # 开启自动时间同步
+            time_offset_lidar_to_imu: 0.0
+            time_sync_threshold: 1.0
+            time_add_threshold: 100.0  # 自动同步触发阈值，时间差超过该值才自动校准（单位：秒）
+            imu_time_jump_handling: "discard"
+
+        preprocess:
+            lidar_type: 1               
+            scan_line:  4             
+            blind: 1.0                   # 从 0.5 → 1.0，过滤太近的点（<1m），减少噪声                   
+            # 过滤离群点（减少噪声点导致的误匹配）
+            outlier_filter_enable: true  # 开启点云离群点过滤
+            outlier_filter_k: 10         # 邻域点数
+            outlier_filter_std: 1.0      # 标准差阈值（超过则视为噪声点）
+
+        mapping:
+            acc_cov: 0.05              # 从 0.05 → 0.1，增加IMU协方差 = 降低IMU权重，给激光更多权重
+            gyr_cov: 0.05               # 从 0.05 → 0.1，如果IMU外参不准，降低其信任度能减少飞漂
+            b_acc_cov: 0.0001
+            b_gyr_cov: 0.0001
+            fov_degree:    360.0
+            det_range:     50.0         # 从 60 → 50，减少远距离噪声点带来的误匹配
+            extrinsic_est_en:  false      # 开启在线外参估计，自动优化IMU-LiDAR外参，减少飞漂 
+            extrinsic_T: [ -0.011, -0.02329, 0.04412 ]
+            extrinsic_R: [ 1., 0., 0.,
+                           0., 1., 0.,
+                           0., 0., 1.]
+
+        publish:
+            path_en: false                
+            scan_publish_en:  true      
+            dense_publish_en: true      
+            scan_bodyframe_pub_en: true  
+
+        pcd_save:
+            pcd_save_en: false            
+            interval: 1
+

@@ -1,0 +1,644 @@
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 64, 94, 312]           3,136
+       BatchNorm2d-2          [-1, 64, 94, 312]             128
+         GroupNorm-3          [-1, 64, 94, 312]             128
+            Conv2d-4          [-1, 96, 47, 156]          24,672
+            Conv2d-5          [-1, 96, 47, 156]           4,704
+         GroupNorm-6          [-1, 96, 47, 156]             192
+            Conv2d-7         [-1, 384, 47, 156]          37,248
+              GELU-8         [-1, 384, 47, 156]               0
+            Conv2d-9          [-1, 96, 47, 156]          36,960
+      LayerScaler-10          [-1, 96, 47, 156]               0
+  StochasticDepth-11          [-1, 96, 47, 156]               0
+  BottleNeckBlock-12          [-1, 96, 47, 156]               0
+           Conv2d-13          [-1, 96, 47, 156]           4,704
+        GroupNorm-14          [-1, 96, 47, 156]             192
+           Conv2d-15         [-1, 384, 47, 156]          37,248
+             GELU-16         [-1, 384, 47, 156]               0
+           Conv2d-17          [-1, 96, 47, 156]          36,960
+      LayerScaler-18          [-1, 96, 47, 156]               0
+  StochasticDepth-19          [-1, 96, 47, 156]               0
+  BottleNeckBlock-20          [-1, 96, 47, 156]               0
+           Conv2d-21          [-1, 96, 47, 156]           4,704
+        GroupNorm-22          [-1, 96, 47, 156]             192
+           Conv2d-23         [-1, 384, 47, 156]          37,248
+             GELU-24         [-1, 384, 47, 156]               0
+           Conv2d-25          [-1, 96, 47, 156]          36,960
+      LayerScaler-26          [-1, 96, 47, 156]               0
+  StochasticDepth-27          [-1, 96, 47, 156]               0
+  BottleNeckBlock-28          [-1, 96, 47, 156]               0
+           Conv2d-29          [-1, 96, 47, 156]           4,704
+        GroupNorm-30          [-1, 96, 47, 156]             192
+           Conv2d-31         [-1, 384, 47, 156]          37,248
+             GELU-32         [-1, 384, 47, 156]               0
+           Conv2d-33          [-1, 96, 47, 156]          36,960
+      LayerScaler-34          [-1, 96, 47, 156]               0
+  StochasticDepth-35          [-1, 96, 47, 156]               0
+  BottleNeckBlock-36          [-1, 96, 47, 156]               0
+           Conv2d-37          [-1, 96, 47, 156]           4,704
+        GroupNorm-38          [-1, 96, 47, 156]             192
+           Conv2d-39         [-1, 384, 47, 156]          37,248
+             GELU-40         [-1, 384, 47, 156]               0
+           Conv2d-41          [-1, 96, 47, 156]          36,960
+      LayerScaler-42          [-1, 96, 47, 156]               0
+  StochasticDepth-43          [-1, 96, 47, 156]               0
+  BottleNeckBlock-44          [-1, 96, 47, 156]               0
+           Conv2d-45          [-1, 96, 47, 156]           4,704
+        GroupNorm-46          [-1, 96, 47, 156]             192
+           Conv2d-47         [-1, 384, 47, 156]          37,248
+             GELU-48         [-1, 384, 47, 156]               0
+           Conv2d-49          [-1, 96, 47, 156]          36,960
+      LayerScaler-50          [-1, 96, 47, 156]               0
+  StochasticDepth-51          [-1, 96, 47, 156]               0
+  BottleNeckBlock-52          [-1, 96, 47, 156]               0
+        GroupNorm-53          [-1, 96, 47, 156]             192
+           Conv2d-54          [-1, 192, 23, 78]          73,920
+           Conv2d-55          [-1, 192, 23, 78]           9,408
+        GroupNorm-56          [-1, 192, 23, 78]             384
+           Conv2d-57          [-1, 768, 23, 78]         148,224
+             GELU-58          [-1, 768, 23, 78]               0
+           Conv2d-59          [-1, 192, 23, 78]         147,648
+      LayerScaler-60          [-1, 192, 23, 78]               0
+  StochasticDepth-61          [-1, 192, 23, 78]               0
+  BottleNeckBlock-62          [-1, 192, 23, 78]               0
+           Conv2d-63          [-1, 192, 23, 78]           9,408
+        GroupNorm-64          [-1, 192, 23, 78]             384
+           Conv2d-65          [-1, 768, 23, 78]         148,224
+             GELU-66          [-1, 768, 23, 78]               0
+           Conv2d-67          [-1, 192, 23, 78]         147,648
+      LayerScaler-68          [-1, 192, 23, 78]               0
+  StochasticDepth-69          [-1, 192, 23, 78]               0
+  BottleNeckBlock-70          [-1, 192, 23, 78]               0
+           Conv2d-71          [-1, 192, 23, 78]           9,408
+        GroupNorm-72          [-1, 192, 23, 78]             384
+           Conv2d-73          [-1, 768, 23, 78]         148,224
+             GELU-74          [-1, 768, 23, 78]               0
+           Conv2d-75          [-1, 192, 23, 78]         147,648
+      LayerScaler-76          [-1, 192, 23, 78]               0
+  StochasticDepth-77          [-1, 192, 23, 78]               0
+  BottleNeckBlock-78          [-1, 192, 23, 78]               0
+  ConvNextEncoder-79          [-1, 192, 23, 78]               0
+         Upsample-80         [-1, 192, 94, 312]               0
+           Conv2d-81           [-1, 2, 94, 312]             386
+          Sigmoid-82           [-1, 2, 94, 312]               0
+             Head-83           [-1, 2, 94, 312]               0
+================================================================
+Total params: 1,494,178
+Trainable params: 1,494,178
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 5.37
+Forward/backward pass size (MB): 664.72
+Params size (MB): 5.70
+Estimated Total Size (MB): 675.79
+----------------------------------------------------------------
+Running on cuda
+
+   Epoch 1
+----------------------------------------------------------------
+loss: 17.966022  [    0/   16], 	 bce_occupancy: 15.404287, bce_edges: 2.561735,
+Test Error: 
+ Avg loss: 32.181549
+ Mean IoU (threshold=0.1): 0.126091
+
+✨ New best model saved! Mean IoU = 0.126091 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:03.520634
+
+   Epoch 2
+----------------------------------------------------------------
+loss: 21.668818  [    0/   16], 	 bce_occupancy: 19.250103, bce_edges: 2.418715,
+Test Error: 
+ Avg loss: 12.566411
+ Mean IoU (threshold=0.1): 0.138383
+
+✨ New best model saved! Mean IoU = 0.138383 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:06.163468
+
+   Epoch 3
+----------------------------------------------------------------
+loss: 16.772213  [    0/   16], 	 bce_occupancy: 14.482204, bce_edges: 2.290008,
+Test Error: 
+ Avg loss: 29.668039
+ Mean IoU (threshold=0.1): 0.126133
+
+Current IoU 0.126133 not better than best 0.138383, skip saving
+Time elapsed: 0:00:08.712827
+
+   Epoch 4
+----------------------------------------------------------------
+loss: 13.995840  [    0/   16], 	 bce_occupancy: 12.044675, bce_edges: 1.951165,
+Test Error: 
+ Avg loss: 8.810276
+ Mean IoU (threshold=0.1): 0.195975
+
+✨ New best model saved! Mean IoU = 0.195975 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:11.396843
+
+   Epoch 5
+----------------------------------------------------------------
+loss: 9.500666  [    0/   16], 	 bce_occupancy: 8.050683, bce_edges: 1.449983,
+Test Error: 
+ Avg loss: 5.969677
+ Mean IoU (threshold=0.1): 0.268761
+
+✨ New best model saved! Mean IoU = 0.268761 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:14.149952
+
+   Epoch 6
+----------------------------------------------------------------
+loss: 6.654923  [    0/   16], 	 bce_occupancy: 5.787173, bce_edges: 0.867750,
+Test Error: 
+ Avg loss: 5.835515
+ Mean IoU (threshold=0.1): 0.435204
+
+✨ New best model saved! Mean IoU = 0.435204 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:16.803279
+
+   Epoch 7
+----------------------------------------------------------------
+loss: 6.187380  [    0/   16], 	 bce_occupancy: 5.381239, bce_edges: 0.806142,
+Test Error: 
+ Avg loss: 6.507328
+ Mean IoU (threshold=0.1): 0.330770
+
+Current IoU 0.330770 not better than best 0.435204, skip saving
+Time elapsed: 0:00:19.378078
+
+   Epoch 8
+----------------------------------------------------------------
+loss: 6.286926  [    0/   16], 	 bce_occupancy: 5.448737, bce_edges: 0.838189,
+Test Error: 
+ Avg loss: 8.058458
+ Mean IoU (threshold=0.1): 0.231912
+
+Current IoU 0.231912 not better than best 0.435204, skip saving
+Time elapsed: 0:00:21.993580
+
+   Epoch 9
+----------------------------------------------------------------
+loss: 5.343497  [    0/   16], 	 bce_occupancy: 4.625061, bce_edges: 0.718437,
+Test Error: 
+ Avg loss: 5.017197
+ Mean IoU (threshold=0.1): 0.331830
+
+Current IoU 0.331830 not better than best 0.435204, skip saving
+Time elapsed: 0:00:24.626115
+
+   Epoch 10
+----------------------------------------------------------------
+loss: 4.758642  [    0/   16], 	 bce_occupancy: 4.147248, bce_edges: 0.611394,
+Test Error: 
+ Avg loss: 5.761891
+ Mean IoU (threshold=0.1): 0.274656
+
+Current IoU 0.274656 not better than best 0.435204, skip saving
+Time elapsed: 0:00:27.197252
+
+   Epoch 11
+----------------------------------------------------------------
+loss: 4.490019  [    0/   16], 	 bce_occupancy: 3.912817, bce_edges: 0.577203,
+Test Error: 
+ Avg loss: 7.729605
+ Mean IoU (threshold=0.1): 0.237334
+
+Current IoU 0.237334 not better than best 0.435204, skip saving
+Time elapsed: 0:00:29.633726
+
+   Epoch 12
+----------------------------------------------------------------
+loss: 3.969194  [    0/   16], 	 bce_occupancy: 3.406701, bce_edges: 0.562493,
+Test Error: 
+ Avg loss: 4.255022
+ Mean IoU (threshold=0.1): 0.372562
+
+Current IoU 0.372562 not better than best 0.435204, skip saving
+Time elapsed: 0:00:32.173214
+
+   Epoch 13
+----------------------------------------------------------------
+loss: 3.896633  [    0/   16], 	 bce_occupancy: 3.313369, bce_edges: 0.583264,
+Test Error: 
+ Avg loss: 4.176859
+ Mean IoU (threshold=0.1): 0.374914
+
+Current IoU 0.374914 not better than best 0.435204, skip saving
+Time elapsed: 0:00:34.665472
+
+   Epoch 14
+----------------------------------------------------------------
+loss: 3.571025  [    0/   16], 	 bce_occupancy: 2.981940, bce_edges: 0.589085,
+Test Error: 
+ Avg loss: 4.460783
+ Mean IoU (threshold=0.1): 0.371780
+
+Current IoU 0.371780 not better than best 0.435204, skip saving
+Time elapsed: 0:00:37.317771
+
+   Epoch 15
+----------------------------------------------------------------
+loss: 3.382835  [    0/   16], 	 bce_occupancy: 2.783472, bce_edges: 0.599364,
+Test Error: 
+ Avg loss: 3.065194
+ Mean IoU (threshold=0.1): 0.487865
+
+✨ New best model saved! Mean IoU = 0.487865 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:39.902696
+
+   Epoch 16
+----------------------------------------------------------------
+loss: 3.473023  [    0/   16], 	 bce_occupancy: 2.860209, bce_edges: 0.612814,
+Test Error: 
+ Avg loss: 2.955186
+ Mean IoU (threshold=0.1): 0.509538
+
+✨ New best model saved! Mean IoU = 0.509538 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:42.574981
+
+   Epoch 17
+----------------------------------------------------------------
+loss: 3.122630  [    0/   16], 	 bce_occupancy: 2.541131, bce_edges: 0.581498,
+Test Error: 
+ Avg loss: 2.824880
+ Mean IoU (threshold=0.1): 0.555390
+
+✨ New best model saved! Mean IoU = 0.555390 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:45.324128
+
+   Epoch 18
+----------------------------------------------------------------
+loss: 2.933574  [    0/   16], 	 bce_occupancy: 2.375615, bce_edges: 0.557960,
+Test Error: 
+ Avg loss: 2.674081
+ Mean IoU (threshold=0.1): 0.577916
+
+✨ New best model saved! Mean IoU = 0.577916 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:48.018211
+
+   Epoch 19
+----------------------------------------------------------------
+loss: 2.759371  [    0/   16], 	 bce_occupancy: 2.225118, bce_edges: 0.534253,
+Test Error: 
+ Avg loss: 2.584117
+ Mean IoU (threshold=0.1): 0.613433
+
+✨ New best model saved! Mean IoU = 0.613433 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:50.626970
+
+   Epoch 20
+----------------------------------------------------------------
+loss: 2.607767  [    0/   16], 	 bce_occupancy: 2.086454, bce_edges: 0.521313,
+Test Error: 
+ Avg loss: 3.861962
+ Mean IoU (threshold=0.1): 0.515485
+
+Current IoU 0.515485 not better than best 0.613433, skip saving
+Time elapsed: 0:00:53.124321
+
+   Epoch 21
+----------------------------------------------------------------
+loss: 2.810885  [    0/   16], 	 bce_occupancy: 2.307949, bce_edges: 0.502936,
+Test Error: 
+ Avg loss: 2.561941
+ Mean IoU (threshold=0.1): 0.641981
+
+✨ New best model saved! Mean IoU = 0.641981 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:00:56.126753
+
+   Epoch 22
+----------------------------------------------------------------
+loss: 2.471462  [    0/   16], 	 bce_occupancy: 1.956525, bce_edges: 0.514937,
+Test Error: 
+ Avg loss: 14.337157
+ Mean IoU (threshold=0.1): 0.309380
+
+Current IoU 0.309380 not better than best 0.641981, skip saving
+Time elapsed: 0:00:59.661808
+
+   Epoch 23
+----------------------------------------------------------------
+loss: 6.230257  [    0/   16], 	 bce_occupancy: 5.247509, bce_edges: 0.982748,
+Test Error: 
+ Avg loss: 13.162820
+ Mean IoU (threshold=0.1): 0.306989
+
+Current IoU 0.306989 not better than best 0.641981, skip saving
+Time elapsed: 0:01:03.483025
+
+   Epoch 24
+----------------------------------------------------------------
+loss: 3.391249  [    0/   16], 	 bce_occupancy: 2.780657, bce_edges: 0.610592,
+Test Error: 
+ Avg loss: 5.969805
+ Mean IoU (threshold=0.1): 0.450594
+
+Current IoU 0.450594 not better than best 0.641981, skip saving
+Time elapsed: 0:01:06.598536
+
+   Epoch 25
+----------------------------------------------------------------
+loss: 3.153634  [    0/   16], 	 bce_occupancy: 2.571145, bce_edges: 0.582489,
+Test Error: 
+ Avg loss: 5.664392
+ Mean IoU (threshold=0.1): 0.418938
+
+Current IoU 0.418938 not better than best 0.641981, skip saving
+Time elapsed: 0:01:09.469264
+
+   Epoch 26
+----------------------------------------------------------------
+loss: 2.776234  [    0/   16], 	 bce_occupancy: 2.221571, bce_edges: 0.554663,
+Test Error: 
+ Avg loss: 5.355007
+ Mean IoU (threshold=0.1): 0.402162
+
+Current IoU 0.402162 not better than best 0.641981, skip saving
+Time elapsed: 0:01:12.303814
+
+   Epoch 27
+----------------------------------------------------------------
+loss: 2.733017  [    0/   16], 	 bce_occupancy: 2.174794, bce_edges: 0.558223,
+Test Error: 
+ Avg loss: 4.071360
+ Mean IoU (threshold=0.1): 0.431079
+
+Current IoU 0.431079 not better than best 0.641981, skip saving
+Time elapsed: 0:01:14.973153
+
+   Epoch 28
+----------------------------------------------------------------
+loss: 2.702912  [    0/   16], 	 bce_occupancy: 2.174166, bce_edges: 0.528747,
+Test Error: 
+ Avg loss: 3.713639
+ Mean IoU (threshold=0.1): 0.433680
+
+Current IoU 0.433680 not better than best 0.641981, skip saving
+Time elapsed: 0:01:17.723049
+
+   Epoch 29
+----------------------------------------------------------------
+loss: 2.550685  [    0/   16], 	 bce_occupancy: 2.042201, bce_edges: 0.508484,
+Test Error: 
+ Avg loss: 3.174839
+ Mean IoU (threshold=0.1): 0.492264
+
+Current IoU 0.492264 not better than best 0.641981, skip saving
+Time elapsed: 0:01:20.463855
+
+   Epoch 30
+----------------------------------------------------------------
+loss: 2.364231  [    0/   16], 	 bce_occupancy: 1.873907, bce_edges: 0.490324,
+Test Error: 
+ Avg loss: 2.695264
+ Mean IoU (threshold=0.1): 0.560177
+
+Current IoU 0.560177 not better than best 0.641981, skip saving
+Time elapsed: 0:01:23.147983
+
+   Epoch 31
+----------------------------------------------------------------
+loss: 2.318392  [    0/   16], 	 bce_occupancy: 1.838795, bce_edges: 0.479597,
+Test Error: 
+ Avg loss: 2.486270
+ Mean IoU (threshold=0.1): 0.590013
+
+Current IoU 0.590013 not better than best 0.641981, skip saving
+Time elapsed: 0:01:25.722615
+
+   Epoch 32
+----------------------------------------------------------------
+loss: 2.293818  [    0/   16], 	 bce_occupancy: 1.821318, bce_edges: 0.472500,
+Test Error: 
+ Avg loss: 2.436185
+ Mean IoU (threshold=0.1): 0.606658
+
+Current IoU 0.606658 not better than best 0.641981, skip saving
+Time elapsed: 0:01:28.441393
+
+   Epoch 33
+----------------------------------------------------------------
+loss: 2.219753  [    0/   16], 	 bce_occupancy: 1.752352, bce_edges: 0.467401,
+Test Error: 
+ Avg loss: 2.451914
+ Mean IoU (threshold=0.1): 0.601063
+
+Current IoU 0.601063 not better than best 0.641981, skip saving
+Time elapsed: 0:01:31.066977
+
+   Epoch 34
+----------------------------------------------------------------
+loss: 2.155988  [    0/   16], 	 bce_occupancy: 1.692133, bce_edges: 0.463856,
+Test Error: 
+ Avg loss: 2.442926
+ Mean IoU (threshold=0.1): 0.602080
+
+Current IoU 0.602080 not better than best 0.641981, skip saving
+Time elapsed: 0:01:33.655617
+
+   Epoch 35
+----------------------------------------------------------------
+loss: 2.110169  [    0/   16], 	 bce_occupancy: 1.651088, bce_edges: 0.459082,
+Test Error: 
+ Avg loss: 2.372923
+ Mean IoU (threshold=0.1): 0.630989
+
+Current IoU 0.630989 not better than best 0.641981, skip saving
+Time elapsed: 0:01:36.274549
+
+   Epoch 36
+----------------------------------------------------------------
+loss: 2.057077  [    0/   16], 	 bce_occupancy: 1.602542, bce_edges: 0.454534,
+Test Error: 
+ Avg loss: 2.299399
+ Mean IoU (threshold=0.1): 0.651260
+
+✨ New best model saved! Mean IoU = 0.651260 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:38.990358
+
+   Epoch 37
+----------------------------------------------------------------
+loss: 1.987879  [    0/   16], 	 bce_occupancy: 1.537603, bce_edges: 0.450276,
+Test Error: 
+ Avg loss: 2.254726
+ Mean IoU (threshold=0.1): 0.662870
+
+✨ New best model saved! Mean IoU = 0.662870 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:41.663600
+
+   Epoch 38
+----------------------------------------------------------------
+loss: 1.928425  [    0/   16], 	 bce_occupancy: 1.482487, bce_edges: 0.445938,
+Test Error: 
+ Avg loss: 2.241825
+ Mean IoU (threshold=0.1): 0.676271
+
+✨ New best model saved! Mean IoU = 0.676271 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:44.263706
+
+   Epoch 39
+----------------------------------------------------------------
+loss: 1.885855  [    0/   16], 	 bce_occupancy: 1.444494, bce_edges: 0.441360,
+Test Error: 
+ Avg loss: 2.232377
+ Mean IoU (threshold=0.1): 0.681468
+
+✨ New best model saved! Mean IoU = 0.681468 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:47.063939
+
+   Epoch 40
+----------------------------------------------------------------
+loss: 1.841948  [    0/   16], 	 bce_occupancy: 1.404190, bce_edges: 0.437758,
+Test Error: 
+ Avg loss: 2.231004
+ Mean IoU (threshold=0.1): 0.688352
+
+✨ New best model saved! Mean IoU = 0.688352 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:49.816099
+
+   Epoch 41
+----------------------------------------------------------------
+loss: 1.795825  [    0/   16], 	 bce_occupancy: 1.361380, bce_edges: 0.434445,
+Test Error: 
+ Avg loss: 2.237278
+ Mean IoU (threshold=0.1): 0.690871
+
+✨ New best model saved! Mean IoU = 0.690871 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:52.545183
+
+   Epoch 42
+----------------------------------------------------------------
+loss: 1.753585  [    0/   16], 	 bce_occupancy: 1.323062, bce_edges: 0.430523,
+Test Error: 
+ Avg loss: 2.254742
+ Mean IoU (threshold=0.1): 0.695577
+
+✨ New best model saved! Mean IoU = 0.695577 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:55.158656
+
+   Epoch 43
+----------------------------------------------------------------
+loss: 1.716206  [    0/   16], 	 bce_occupancy: 1.289962, bce_edges: 0.426244,
+Test Error: 
+ Avg loss: 2.265749
+ Mean IoU (threshold=0.1): 0.700275
+
+✨ New best model saved! Mean IoU = 0.700275 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:01:57.806078
+
+   Epoch 44
+----------------------------------------------------------------
+loss: 1.678050  [    0/   16], 	 bce_occupancy: 1.255621, bce_edges: 0.422429,
+Test Error: 
+ Avg loss: 2.287081
+ Mean IoU (threshold=0.1): 0.701136
+
+✨ New best model saved! Mean IoU = 0.701136 → best_model_weights/StixelNExT_ground_best.pth
+✅ Best model copied to comparison folder: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth
+Time elapsed: 0:02:00.571126
+
+   Epoch 45
+----------------------------------------------------------------
+loss: 1.644888  [    0/   16], 	 bce_occupancy: 1.226528, bce_edges: 0.418361,
+Test Error: 
+ Avg loss: 2.326755
+ Mean IoU (threshold=0.1): 0.700304
+
+Current IoU 0.700304 not better than best 0.701136, skip saving
+Time elapsed: 0:02:03.337108
+
+   Epoch 46
+----------------------------------------------------------------
+loss: 1.619183  [    0/   16], 	 bce_occupancy: 1.205186, bce_edges: 0.413997,
+Test Error: 
+ Avg loss: 2.367829
+ Mean IoU (threshold=0.1): 0.698738
+
+Current IoU 0.698738 not better than best 0.701136, skip saving
+Time elapsed: 0:02:05.885563
+
+   Epoch 47
+----------------------------------------------------------------
+loss: 1.594147  [    0/   16], 	 bce_occupancy: 1.184099, bce_edges: 0.410048,
+Test Error: 
+ Avg loss: 2.432922
+ Mean IoU (threshold=0.1): 0.696201
+
+Current IoU 0.696201 not better than best 0.701136, skip saving
+Time elapsed: 0:02:08.601538
+
+   Epoch 48
+----------------------------------------------------------------
+loss: 1.571305  [    0/   16], 	 bce_occupancy: 1.165873, bce_edges: 0.405432,
+Test Error: 
+ Avg loss: 2.486021
+ Mean IoU (threshold=0.1): 0.695769
+
+Current IoU 0.695769 not better than best 0.701136, skip saving
+Time elapsed: 0:02:11.113225
+
+   Epoch 49
+----------------------------------------------------------------
+loss: 1.544597  [    0/   16], 	 bce_occupancy: 1.143157, bce_edges: 0.401440,
+Test Error: 
+ Avg loss: 2.586483
+ Mean IoU (threshold=0.1): 0.690424
+
+Current IoU 0.690424 not better than best 0.701136, skip saving
+Time elapsed: 0:02:13.763396
+
+   Epoch 50
+----------------------------------------------------------------
+loss: 1.521008  [    0/   16], 	 bce_occupancy: 1.124257, bce_edges: 0.396752,
+Test Error: 
+ Avg loss: 2.653623
+ Mean IoU (threshold=0.1): 0.686660
+
+Current IoU 0.686660 not better than best 0.701136, skip saving
+Time elapsed: 0:02:16.384711
+
+   Epoch 51
+----------------------------------------------------------------
+loss: 1.490594  [    0/   16], 	 bce_occupancy: 1.097322, bce_edges: 0.393271,
+Test Error: 
+ Avg loss: 2.864074
+ Mean IoU (threshold=0.1): 0.672423
+
+Current IoU 0.672423 not better than best 0.701136, skip saving
+Time elapsed: 0:02:19.009241
+
+   Epoch 52
+----------------------------------------------------------------
+loss: 1.469564  [    0/   16], 	 bce_occupancy: 1.081640, bce_edges: 0.387924,
+Test Error: 
+ Avg loss: 2.972305
+ Mean IoU (threshold=0.1): 0.657547
+
+Current IoU 0.657547 not better than best 0.701136, skip saving
+Time elapsed: 0:02:21.730851
+Early stopping at epoch 52, best Mean IoU = 0.701136
+
+Finished training in 0:02:21
+Best validation Mean IoU: 0.701136
+Best validation error: 2.287081
+Best model: best_model_weights/StixelNExT_ground_best.pth
+Already copied to: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/model_checkpoints/StixelNExT_ground_best.pth

@@ -1,0 +1,6 @@
+# IMU倾斜角计算结果（计算值=写入值）
+raw_roll_deg: 1.8
+raw_pitch_deg: 31.3
+roll_correct_deg: 1.8
+pitch_correct_deg: 31.3
+raw_acc: [-0.5188, 0.0262, 0.8545]

@@ -1,0 +1,4 @@
+Epoch: 6
+Best IoU: 0.824071
+Test Error: 1.888360
+Timestamp: 2026-05-06 17:21:51

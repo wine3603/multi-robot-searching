@@ -1,0 +1,42 @@
+batch_size: 4
+data_path: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/ground_data
+dataset: ground
+grid_step: 4
+img_height: 376
+img_width: 1248
+num_epochs: 2000
+learning_rate: 0.001
+training: True
+explore_data: False
+test_loss: False
+inspect_model: True
+resources:
+  train_worker: 4
+  val_worker: 2
+  test_worker: 1
+load_weights: False
+weights_file: StixelNExT_legendary-mountain-17_epoch-6_loss-56299.47203177295.pth
+logging:
+  activate: False
+  project: Stixel-Multicut-ground
+loss:
+  alpha: 3.0  # 增加 occupancy 权重，因为正样本少
+  beta: false # 禁用 occupancy 均值惩罚，我们不需要它 - 它会抑制正预测
+  gamma: 1.0  # 边界权重
+  delta: false
+nn:
+  depths:
+    - 6
+    - 3
+  drop_p: 0.0
+  stem_features: 64
+  widths:
+    - 96
+    - 192
+    - 384
+    - 768
+pred_threshold: 0.58
+max_dist: 45
+early_stopping:
+  tolerance: 8
+  min_delta: 0.0001

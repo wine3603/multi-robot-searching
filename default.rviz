@@ -1,0 +1,23 @@
+---
+# RViz2 configuration
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/PointCloud2
+      Name: reference_cloud_raw
+      Enabled: true
+      Topic: /reference_cloud_raw
+      Size (Pixels): 2
+      Color: 255; 0; 0
+      Alpha: 1.0
+    - Class: rviz_default_plugins/PointCloud2
+      Name: local_cloud_aligned
+      Enabled: true
+      Topic: /local_cloud_aligned
+      Size (Pixels): 2
+      Color: 0; 255; 0
+      Alpha: 1.0
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: camera_init
+  Enabled: true
+...

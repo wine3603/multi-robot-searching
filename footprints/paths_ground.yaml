@@ -1,0 +1,3 @@
+ground:
+  dataset: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/ground_data
+  training_data: /home/orin-001/sda/agibotnav/src/FAST_LIO/scripts/ground_data

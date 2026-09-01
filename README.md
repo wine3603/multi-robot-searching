@@ -132,9 +132,9 @@ If you find this project useful in your research, please consider citing:
 
 - [FAST_LIO](https://github.com/hku-mars/FAST_LIO) — raw LiDAR-inertial odometry
 - [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) — RRT-family planners (adapted in `src/PathPlanning`)
-- [Footprints](https://github.com/nianticlabs/contactless-estimation) — traversable space estimation (CVPR 2020), module in `footprints/`
+- [Footprints](https://github.com/nianticlabs/footprints) — traversable space estimation (CVPR 2020), module in `footprints/`
 - [GANav-offroad](https://github.com/rayguan97/GANav-offroad) — semantic segmentation on MMSegmentation, module in `GANav-offroad/`
-- [StixelNExT](https://github.com/DanielPrograms/StixelNExT) — stixel-based ground detection, module in `StixelNExT/`
+- [StixelNExT](https://github.com/MarcelVSHNS/StixelNExT) — stixel-based ground detection, module in `StixelNExT/`
 
 ## License
 

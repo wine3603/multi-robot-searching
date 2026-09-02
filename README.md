@@ -1,4 +1,4 @@
-# multi-robot-searching
+# Multi-Robot-Searching
 
 A real-time semantic SLAM and autonomous exploration framework for quadruped robots.
 The system fuses Livox MID360 LiDAR and an FPV camera, builds a semantic occupancy grid

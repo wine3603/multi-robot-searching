@@ -1,5 +1,7 @@
 # Multi-Robot-Searching
 
+RAP 2026 paper: Fast Exploration and Coverage of Unknown Indoor Environments Using Real-Time Semantic SLAM on Quadruped Robots
+
 A real-time semantic SLAM and autonomous exploration framework for quadruped robots.
 The system fuses Livox MID360 LiDAR and an FPV camera, builds a semantic occupancy grid
 map (rooms / corridors / walls / obstacles), performs onboard ground segmentation, and

@@ -126,7 +126,7 @@ python3 src/FAST_LIO/scripts/autonomous_explore.py         # Dynamic-RRT explora
 
 ## Citing
 
-If you find this project useful in your research, please consider citing[our paper](https://ieeexplore.ieee.org/document/11680534):
+If you find this project useful in your research, please consider citing [our paper](https://ieeexplore.ieee.org/document/11680534):
 
 ```bash
  @ARTICLE{searchSLAM,

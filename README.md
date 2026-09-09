@@ -126,9 +126,18 @@ python3 src/FAST_LIO/scripts/autonomous_explore.py         # Dynamic-RRT explora
 
 ## Citing
 
-If you find this project useful in your research, please consider citing:
+If you find this project useful in your research, please consider citing[our paper](https://ieeexplore.ieee.org/document/11680534):
 
-> (paper link will be added here — stay tuned)
+```bash
+ @ARTICLE{searchSLAM,
+    author={Zhou, Dingnuo and Zhang, Tianwei},
+    journal={IEEE Robotics and Automation Practice}, 
+    title={Fast Exploration and Coverage of Unknown Indoor Environments Using Real-Time Semantic SLAM on Quadruped Robots}, 
+    year={2026},
+    pages={1-6},
+    doi={10.1109/RAP.2026.3731188}
+  }
+```
 
 ## Related repositories
 
